@@ -69,3 +69,39 @@
 ## after, before
 
 - 가상요소를 추가 (앞 또는 뒤에 css로 뭔가 추가할떄)
+
+## img 표현방법
+
+1. img - 이미지 불러올때
+
+```html
+<img src="" alt="" />
+```
+
+2. figure - 이미지 표현할때
+3. figcation - 이미지 설명할때
+
+```html
+<figure>
+  <img src="" alt="" />
+  <figcation>이미지 설명</figcation>
+</figure>
+```
+
+4. picture - 이미지를 화면크기에 따라 사용 (반응형)
+
+```html
+<picture>
+  <source media="(max-width:1000px)" srcset="img1" />
+  <source media="(min-width:800px)" srcset="img2" />
+  <img src="img3" alt="" />
+</picture>
+```
+
+## border에 의해 라인이 겹치면
+
+`margin-left: -1 or margin-right: -1`
+
+## 이미지 일부가져오기
+
+`background-position: -87px -125px;`
