@@ -53,3 +53,19 @@
   top: -7px;
 }
 ```
+
+## 한줄로 쓰다가 밑으로 내릴때
+
+```html
+<h2>캡틴 마블 <em>Captin Marvel</em></h2>
+```
+
+```css
+.h2 em {
+  display: block;
+}
+```
+
+## after, before
+
+- 가상요소를 추가 (앞 또는 뒤에 css로 뭔가 추가할떄)

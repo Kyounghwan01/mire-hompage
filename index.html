@@ -21,6 +21,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/reset19.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/swiper.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
 
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="assets/icons/favicon.ico" />
@@ -101,7 +103,7 @@
               <a href="#">
                 <em><img src="assets/img/logo.png" alt="MEGABOX" /></em>
                 <strong
-                  ><img src="assets/img/logo-sub.png" alt="LIFE THEATHER"
+                  ><img src="assets/img/logo-sub.png" alt="LIFE THEATER"
                 /></strong>
               </a>
             </h1>
@@ -134,7 +136,11 @@
           <div class="row">
             <div class="bm_left">
               <ul>
-                <li class="total"><a href="#">전체메뉴</a></li>
+                <li class="total">
+                  <a href="#"
+                    ><i class="fa fa-bars" aria-hidden="true"></i> 전체메뉴</a
+                  >
+                </li>
                 <li class="line"><a href="#">필름 소사이이터</a></li>
                 <li><a href="#">클래식 소사이이터</a></li>
               </ul>
@@ -146,7 +152,7 @@
                 <li><a href="#">VIP</a></li>
               </ul>
               <ul>
-                <li class="white"><a href="#">상영시간표 </a></li>
+                <li class="white"><a href="#">상영시간표</a></li>
                 <li class="purple"><a href="#">빠른 예매</a></li>
               </ul>
             </div>
@@ -154,7 +160,37 @@
         </div>
       </div>
       <div class="slider">
-        <img src="assets/img/main_slider01.jpg" alt="베스와 베라" />
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ss1">
+              <div class="container">
+                <div class="row">
+                  <h2>캡틴 마블 <em>Captain Marvel</em></h2>
+                  <p>새로운 히어로, 어벤져스의 희망</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide ss2">
+              <div class="container">
+                <div class="row">
+                  <h2>캡틴 마블 <em>Captain Marvel</em></h2>
+                  <p>새로운 히어로, 어벤져스의 희망</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide ss3">
+              <div class="container">
+                <div class="row">
+                  <h2>캡틴 마블 <em>Captain Marvel</em></h2>
+                  <p>새로운 히어로, 어벤져스의 희망</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
     </section>
     <!-- banner -->
@@ -163,5 +199,20 @@
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/modernizr-custom.js"></script>
     <script src="assets/js/ie-checker.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination"
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        autoplay: {
+          delay: 5000
+        }
+      });
+    </script>
   </body>
 </html>
