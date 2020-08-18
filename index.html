@@ -1,298 +1,161 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
-    name="viewport" />
-  <title>미래산업-필라테스 요가 예약프로그램</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="webstoryboy" />
+    <meta
+      name="description"
+      content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다."
+    />
+    <meta
+      name="keywords"
+      content="메가박스, 유투브, 영화, 최신영화, 영화관, CGV, 롯데시네마, 웹스토리보이, 웹스, 사이트 만들기, 따라하기"
+    />
+    <title>메가박스 사이트 코딩하기</title>
 
-  <!-- META TAG -->
-  <!-- <link rel="canonical" href="https://studiomate.kr/"> -->
-  <meta name="description" content="필라테스 요가 예약 회원 관리 프로그램, 그룹레슨 개인레슨 일정 관리">
-  <!-- <meta name="keywords" lang="ko" content="스튜디오메이트,필라테스,요가,예약관리,회원관리,피트니스,그룹레슨,개인레슨"> -->
-  <meta name="keywords" lang="ko" content="미래산업,스펀지,">
-  <meta name="keywords" lang="en" content="">
-  <meta name="author" content="">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="미래산업">
-  <meta property="og:site_name" content="미래산업">
-  <meta property="og:image" content="">
-  <!-- <meta property="og:url" content="https://studiomate.kr"> -->
-  <meta property="og:description" content="필라테스 요가 예약 회원 관리 프로그램, 그룹레슨 개인레슨 일정 관리">
-  <meta property="og:locale" content="ko_KR">
-  <meta property="fb:admins" content="">
-  <meta property="fb:app_id" content="">
-  <meta name="twitter:description" content="">
-  <meta property="twitter:image" content="">
-  <meta name="twitter:card" content="">
-  <meta name="google-site-verification" content="d06gjcNN7Ca4Q1oJQYC1pnFxHkIlHDQOZITS2siqGFg" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/reset19.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="assets/icons/favicon_72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="96x96"
+      href="assets/icons/favicon_96.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/icons/favicon_144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="192x192"
+      href="assets/icons/favicon_192.png"
+    />
 
-  <!-- Custom styles -->
-  <link rel="stylesheet" href="css/style.min.css">
-  <?xml-stylesheet type="text/css" href="style.min.css"?>
-</head>
-<body>
-  <header class="header">
-    <a href="#firstPage">
-      <img class="header__logo" src="img/logo_studiomate.svg" alt="스튜디오메이트 로고">
-    </a>
+    <!-- 페이스북 메타 태그 -->
+    <meta property="og:title" content="메가박스 사이트 만들기" />
+    <meta
+      property="og:url"
+      content="https://github.com/webstoryboy/megabox2019"
+    />
+    <meta
+      property="og:image"
+      content="https://webstoryboy.github.io/megabox2019/mega.jpg"
+    />
+    <meta
+      property="og:description"
+      content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다."
+    />
 
-    <!-- 네비게이션 -->
-    <nav class="header__nav">
-      <ul>
-        <li data-menuanchor="firstPage">
-          <a href="#firstPage">홈</a>
-        </li>
-        <li data-menuanchor="secondPage">
-          <a href="#secondPage">서비스 소개</a>
-        </li>
-        <li data-menuanchor="4thPage">
-          <a href="#4thPage">주요기능 소개</a>
-        </li>
-        <li data-menuanchor="10thPage">
-          <a href="#5thPage">서비스 문의 및 신청</a>
-        </li>
-        <li id="to-top" data-menuanchor="firstPage">
-          <a href="#firstPage">
-            <img src="img/ic_top.svg" alt="top 아이콘">
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <!-- 트위터 메타 태그 -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="메가박스 사이트 만들기" />
+    <meta
+      name="twitter:url"
+      content="https://github.com/webstoryboy/megabox2019/"
+    />
+    <meta
+      name="twitter:image"
+      content="https://webstoryboy.github.io/megabox2019/mega.jpg"
+    />
+    <meta
+      name="twitter:description"
+      content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다."
+    />
 
-  <div id="fullpage">
-    <!-- Page 1 - Main -->
-    <div id="main" class="section">
-      <img class="main__image animated fadeInUp" src="img/illust_main.png" srcset="img/illust_main/illust_main_372.png 372w,
-                img/illust_main/illust_main_560.png 560w,
-                img/illust_main/illust_main_768.png 768w,
-                img/illust_main/illust_main_992.png 992w,
-                img/illust_main/illust_main_1170.png 1170w" alt="스튜디오메이트 서비스 이미지">
+    <!-- 웹 폰트 -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean"
+      rel="stylesheet"
+    />
 
-      <div class="main__content animated fadeInUp">
-        <div class="main__content__wrapper">
-          <h1 class="main__content__title">
-            <span>당신의 스튜디오를</span>
-            <span>더 높은 단계로 이끌어줄</span>
-            <b>스튜디오 운영관리 시스템</b>
+    <!-- HTLM5shiv ie6~8 -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script type="text/javascript">
+        alert(
+          "현재 브라우저는 지원하지 않습니다. 크롬 브라우저를 추천합니다.!"
+        );
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="container">
+        <div class="header clearfix">
+          <h1>
+            <a href="#">
+              <em><img src="assets/img/logo.png" alt="MEGABOX" /></em>
+              <strong
+                ><img src="assets/img/logo-sub.png" alt="LIFE THEATHER"
+              /></strong>
+            </a>
           </h1>
-
-          <p class="main__content__mission">
-            Lead your studio business to the next level with technology.
-          </p>
-
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdF79b2l5RMF2Et1ot36g9GWiiDFU6u84II47VaczhIdCBa7Q/viewform?usp=sf_link"
-            target="_blank" rel="noopener noreferrer" class="button">
-            서비스 문의
-          </a>
-        </div>
-
-        <div class="main__content__alert">
-          <p>
-            스튜디오메이트는 <b>크롬 브라우저</b>에 최적화 되어 있습니다.<br>
-            크롬 브라우저를 통해 사용하시기 바랍니다
-          </p>
-          <a href="https://www.google.co.kr/chrome/" target="_blank" rel="noopener noreferrer">
-            <img src="img/chrome.png" alt="크롬 아이콘">
-            크롬 다운로드
-          </a>
+          <nav class="nav">
+            <ul class="clearfix">
+              <li><a href="#">영화</a></li>
+              <li><a href="#">큐레이션</a></li>
+              <li><a href="#">영화관</a></li>
+              <li><a href="#">특별관</a></li>
+              <li><a href="#">스토어</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">로그인</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
+    </header>
+    <!-- header -->
 
-     <!-- Page 2 - About -->
-     <div id="about" class="section">
-      <img class="about__image" src="img/illust_sub_2.png" srcset="img/illust_sub_2/illust_sub_2_372.png 372w,
-                img/illust_sub_2/illust_sub_2_560.png 560w,
-                img/illust_sub_2/illust_sub_2_768.png 768w,
-                img/illust_sub_2/illust_sub_2_992.png 992w" alt="일러스트_해결">
-
-      <div class="about__content">
-        <div class="about__content__wrapper">
-          <h1 class="about__content__title">
-            <span>이런 문제들로</span>
-            <span><b>불편</b>했던 적이 있다면?</span>
-          </h1>
-          <p class="about__content__description">
-            이런 문제들로 고민했던 적이 있다면?<br>
-            스튜디오메이트가 해결 해 드리겠습니다!
-          </p>
-        </div>
-        <div class="about__content__cards">
-          <div class="about__content__card">
-            <img src="img/card_number_1.png" alt="01번">
-            <p>스케줄이 꼬이거나</p>
-            <p>잦은 스케줄 변경</p>
-          </div>
-          <div class="about__content__card">
-            <img src="img/card_number_2.png" alt="02번">
-            <p>노쇼, 당일취소 시</p>
-            <p>횟수 차감의 어려움</p>
-          </div>
-          <div class="about__content__card">
-            <img src="img/card_number_3.png" alt="03번">
-            <p>번거로운</p>
-            <p>단체 메시지 전송</p>
-          </div>
-          <div class="about__content__card">
-            <img src="img/card_number_4.png" alt="04번">
-            <p>불만족스러운</p>
-            <p>고객지원서비스</p>
+    <!-- banner -->
+    <section id="banner">
+      <h2 class="ir_so">최신 영화 소식</h2>
+      <div class="banner_menu">
+        <div class="container">
+          <div class="row">
+            <div class="bm_left">
+              <ul>
+                <li class="total"><a href="#">전체메뉴</a></li>
+                <li class="line"><a href="#">필름 소사이이터</a></li>
+                <li><a href="#">클래식 소사이이터</a></li>
+              </ul>
+            </div>
+            <div class="bm_right">
+              <ul>
+                <li class="line"><a href="#">고객센터</a></li>
+                <li class="line"><a href="#">멤버쉽</a></li>
+                <li><a href="#">VIP</a></li>
+              </ul>
+              <ul>
+                <li class="white"><a href="#">상영시간표</a></li>
+                <li class="purple"><a href="#">빠른 예매</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Page 3 - Service -->
-    <div id="service" class="section">
-      <img class="service__image" src="img/illust_sub_3.png" srcset="img/illust_sub_3/illust_sub_3_372.png 372w,
-                img/illust_sub_3/illust_sub_3_560.png 560w,
-                img/illust_sub_3/illust_sub_3_768.png 768w,
-                img/illust_sub_3/illust_sub_3_992.png 992w,
-                img/illust_sub_3/illust_sub_3_1170.png 1170w" alt="일러스트">
-
-      <div class="service__content">
-        <h1 class="service__content__title">
-          스튜디오메이트
-        </h1>
-        <div class="service__content__description">
-          <p>스튜디오의 효율적인 운영 및 관리를 위한</p>
-          <p>모바일 기반의 실시간 예약 시스템과</p>
-          <p>운영관리에 필요한 다양한 기능들을 제공하는</p>
-          <p>월 이용료 기반의 서비스 입니다.</p>
-        </div>
-
-        <div class="service__content__advantages">
-          <h5>시설</h5>
-          <ul>
-            <li class="number1">클래스일정 및 예약관리 편의성 증대</li>
-            <li class="number2">회원 및 수강권 관리 고도화</li>
-            <li class="number3">체계적인 시설 운영 및 매출관리</li>
-          </ul>
-        </div>
-
-        <div class="service__content__advantages">
-          <h5>회원</h5>
-          <ul>
-            <li class="number1">수업예약 편리성</li>
-            <li class="number2">내 회원권 관리</li>
-            <li class="number3">시설과 강사에 대한 정보 접근 용이</li>
-          </ul>
-        </div>
+      <div class="slider">
+        <img src="assets/img/main_slider01.jpg" alt="베스와 베라" />
       </div>
-    </div>
+    </section>
+    <!-- banner -->
 
-    <!-- Page 4 - Mobile -->
-    <div class="section">
-      <img class="mobile__image" src="img/mockup_mobile.png" srcset="img/mockup_mobile/mockup_mobile_372.png 372w,
-                img/mockup_mobile/mockup_mobile_560.png 560w,
-                img/mockup_mobile/mockup_mobile_768.png 768w,
-                img/mockup_mobile/mockup_mobile_992.png 992w,
-                img/mockup_mobile/mockup_mobile_1170.png 1170w" alt="스튜디오메이트 모바일 앱 이미지">
-
-      <div class="section__content align-right">
-        <img class="section__content__number" src="img/function_number_1.png" alt="기능 1번">
-        <h2 class="section__content__title">
-          회원용 앱, 관리자용 앱 지원
-        </h2>
-        <div class="section__content__description">
-          <p>전화나 메신저로 예약하는 번거로움은 이제그만!</p>
-          <p>언제 어디서나 수업일정을 빠르게 조회하고 간편하게</p>
-          <p>예약과 취소를 요청할 수 있습니다.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Page 10 - Contact -->
-    <div id="contact" class="section">
-      <img class="contact__image" src="img/illust_sub_4.png" srcset="img/illust_sub_4/illust_sub_4_372.png 372w,
-                img/illust_sub_4/illust_sub_4_560.png 560w,
-                img/illust_sub_4/illust_sub_4_768.png 768w,
-                img/illust_sub_4/illust_sub_4_992.png 992w,
-                img/illust_sub_4/illust_sub_4_1170.png 1170w" alt="일러스트">
-
-      <div class="contact__content">
-        <img class="contact__content__bg" src="img/circle.png" alt="일러스트">
-        <h1 class="contact__content__title animated fadeInUp">
-          STUDIOMATE MEMBERSHIP
-        </h1>
-        <div class="contact__content__description">
-          <p>스튜디오메이트는 더 나은 서비스를 위해 끊임없이 고민합니다.</p>
-          <p>상담센터 또는 이메일을 이용하면 더욱 빠른 안내를 받아 볼 수 있습니다.</p>
-        </div>
-        <div class="contact__content__description">
-          <p>서비스 점검 시간 안내 : 매주 화요일 23:00~24:00</p>
-          <p>(점검 중에는 서비스가 원활하지 않을 수 있습니다.)</p>
-        </div>
-        <div class="contact__content__description thick">
-          <p>스튜디오메이트 고객센터: 02-6952-5533, 5366</p>
-        </div>
-        <a class="button"
-          href="mailto:이메일 주소?Subject=이메일 제목&body=이메일 %0D%0A내용&cc=참조이메일주소&bcc=숨은이메일참조주소"
-          target="_blank" rel="noopener noreferrer">
-          서비스 문의
-        </a>
-      </div>
-
-      <div class="contact__contact">
-        <div class="contact__contact__info">
-          <p>상담센터</p>
-          <p>
-            <span>02-6952-5533</span>
-          </p>
-
-          <p>이메일</p>
-          <p>support@studiomate.kr</p>
-
-          <p>상호</p>
-          <p>(주)스튜디오메이트</p>
-
-          <p>사업자등록번호</p>
-          <p>737-88-01259</p>
-
-          <p>대표이사</p>
-          <p>이승욱</p>
-
-          <p>주소</p>
-          <p>서울특별시 강남구 논현로 509, 7층 (역삼동 송암II빌딩)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  </div>
-  <!-- script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#fullpage').fullpage({
-        anchors: [
-          'firstPage',
-          'secondPage',
-          '3rdPage',
-          '4thPage',
-          '5thPage',
-          '6rdPage',
-          '7thPage',
-          '8thPage',
-          '9rdPage',
-          '10thPage'
-        ],
-        menu: '#menu',
-        css3: true
-      });
-    });
-  </script>
-</body>
-</html>
+    <!-- 자바스크립트 라이브러리 -->
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/modernizr-custom.js"></script>
+    <script src="assets/js/ie-checker.js"></script>
+  </body>
 </html>
