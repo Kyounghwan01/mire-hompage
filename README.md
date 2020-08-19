@@ -171,3 +171,8 @@ width: 50px margin: 20px padding: 10px border: 1px
 ## zindex를 사용하는데 반영안되는경우
 
 - position: relative를 활용
+
+## img 넣었는데 여백이 생기는 경우
+
+img는 인라인 구조이기 때문에 폰트사이즈가 영향을 받는다
+img의 display를 block로 바꾸거나 폰트사이즈를 0으로 바꾼다.
