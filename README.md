@@ -2,6 +2,11 @@
 
 ## inline-block을 넣어야 padding이 들어감
 
+span 값은 inline이기 때문에 padding-left, padding-right는 잘되나
+padding-top, padding-bottom은 안된다
+이럴땐, span에 display: inline-block을 넣어주면 위아래 패딩 가능하다.
+a 태그 또한 마찬가지로 inline요소이므로 display: inline-block을 넣어 위아래 패딩을 추가한다.
+
 ## 배너 영역의 좌우 패딩만 넣는 div class 필요
 
 ## float을 쓰면 상위 컨테이너 구조가 깨져서 height가 0이 됨 (즉, 안보임) - overflow: hidden을 쓰던지 clearfix를 만든다
@@ -98,7 +103,7 @@
 </picture>
 ```
 
-## border에 의해 라인이 겹치면
+## border에 의해 라인이 겹치면 겹치는 부분에
 
 `margin-left: -1 or margin-right: -1`
 
@@ -200,5 +205,11 @@ background-size: cover;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  /* or */
+  /* 대상값의 절반을 당겨옴, but width, height가 고정 */
+  margin-top: -100px;
+  margin-left: -100px;
+  width: 200px;
+  height: 200px;
 }
 ```
