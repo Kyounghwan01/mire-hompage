@@ -105,3 +105,12 @@
 ## 이미지 일부가져오기
 
 `background-position: -87px -125px;`
+
+## padding을 width 값 안에 포함되게
+
+width, height = margin + padding + border
+width: 50px + 20px + 10px + 1 => width: 112px
+
+`box-sizing: border-box`라 설정시
+width: 50px margin: 20px padding: 10px border: 1px
+-> width: 90px(50+20+20)됨 --> padding, border가 width에 포함되지 않음
