@@ -114,3 +114,60 @@ width: 50px + 20px + 10px + 1 => width: 112px
 `box-sizing: border-box`라 설정시
 width: 50px margin: 20px padding: 10px border: 1px
 -> width: 90px(50+20+20)됨 --> padding, border가 width에 포함되지 않음
+
+## window width값 줄어들때 요소의 width값도 줄어들도록
+
+`width: auto`
+
+## 포지션 absolute 값을 초기화 할때
+
+`position: static;`
+
+## tab css
+
+```css
+.movie_title ul {
+  position: relative;
+  padding-bottom: 10px;
+}
+.movie_title ul:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #e1e1e1;
+}
+.movie_title li {
+  width: auto;
+  border: 0;
+}
+.movie_title li a {
+  position: relative;
+  font-size: 18px;
+  color: #666;
+  font-weight: 400;
+  padding: 0;
+  margin-right: 35px;
+}
+.movie_title li.active a:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background: #666;
+}
+.movie_title li.active a {
+  background: none;
+  color: #666;
+}
+```
+
+## zindex를 사용하는데 반영안되는경우
+
+- position: relative를 활용
