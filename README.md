@@ -176,3 +176,29 @@ width: 50px margin: 20px padding: 10px border: 1px
 
 img는 인라인 구조이기 때문에 폰트사이즈가 영향을 받는다
 img의 display를 block로 바꾸거나 폰트사이즈를 0으로 바꾼다.
+
+## width 줄때 img가 우쪽만 줄어드는게 아니라 양쪽으로 균일하게 둘어들게
+
+background: #ccc url(../img/new01.jpg) center center;
+background-size: cover;
+
+## 컨텐츠를 가운데로 오게
+
+```html
+<div class="center">
+  <span>Center</span>
+</div>
+```
+
+```css
+.center {
+  position: relative;
+  height: 100vh;
+}
+.center span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+```
