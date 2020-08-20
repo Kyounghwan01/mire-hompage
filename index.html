@@ -113,8 +113,8 @@
             <nav class="nav">
               <ul class="clearfix">
                 <li><a href="#">영화</a></li>
-                <li><a href="#">큐레이션</a></li>
-                <li><a href="#">영화관</a></li>
+                <li><a href="/studio_index.html">큐레이션</a></li>
+                <li><a href="#target" class="scroll">영화관</a></li>
                 <li><a href="#">특별관</a></li>
                 <li><a href="#">스토어</a></li>
                 <li><a href="#">이벤트</a></li>
@@ -1194,7 +1194,7 @@
                 </ul>
               </div>
             </article>
-            <article class="help_box2">
+            <article class="help_box2" id="target">
               <h3><em>메가박스 할인카드</em></h3>
               <div class="card">
                 <ul>
@@ -2298,6 +2298,16 @@
       }
 
       tabMenu.find("ul > li > a").click(tabList).focus(tabList);
+
+      $(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+          event.preventDefault();
+          $("html,body").animate(
+            { scrollTop: $(this.hash).offset().top - 100 },
+            800
+          );
+        });
+      });
     </script>
   </body>
 </html>
